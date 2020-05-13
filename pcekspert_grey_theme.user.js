@@ -34,3 +34,4 @@ function addGlobalStyle(css) {
 addGlobalStyle("body, center, .page, html body div div.page div table, .alt1, .alt2, .panel, .alt1Active, .vBulletin_editor, html body div div.page div table tbody, .imagebutton { background: #B3B3B3 !important; }");
 addGlobalStyle("html body div div.page div table ~ table { background: #33669961 !important; }");
 addGlobalStyle("textarea { background: #C3C3C3 !important; }");
+addGlobalStyle(".pagenav .alt2 { border: 2px solid #336699 !important; background-color: #D3D3D3 !important; }");
