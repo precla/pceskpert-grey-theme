@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         PCEkspert Grey Theme
-// @version      0.2
+// @version      0.3
 // @namespace    https://github.com/precla/pceskpert-grey-theme
 // @description  slightly darker forum theme
 // @author       precla / pci_e3x
@@ -33,4 +33,4 @@ function addGlobalStyle(css) {
 
 addGlobalStyle("body, center, .page, html body div div.page div table, .alt1, .alt2, .panel, .alt1Active, .vBulletin_editor, html body div div.page div table tbody, .imagebutton { background: #B3B3B3 !important; }");
 addGlobalStyle("html body div div.page div table ~ table { background: #33669961 !important; }");
- 
+addGlobalStyle("textarea { background: #C3C3C3 !important; }");
