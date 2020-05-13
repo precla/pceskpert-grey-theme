@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         PCEkspert Grey Theme
-// @version      0.3
+// @version      0.4
 // @namespace    https://github.com/precla/pceskpert-grey-theme
 // @description  slightly darker forum theme
 // @author       precla / pci_e3x
@@ -36,4 +36,4 @@ addGlobalStyle("html body div div.page div table ~ table { background: #33669961
 // text boxe for reply, quick reply, new messages:
 addGlobalStyle("textarea { background: #C3C3C3 !important; }");
 // highlight the current page in the open topic:
-addGlobalStyle(".pagenav .alt2 { border: 2px solid #336699 !important; background-color: #D3D3D3 !important; }");
+addGlobalStyle(".pagenav .alt2 { background-color: #D3D3D3 !important; text-decoration: underline }");
