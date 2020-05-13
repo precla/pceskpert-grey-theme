@@ -10,8 +10,8 @@
 // @match        http://forum.pcekspert.com/*
 // @match        https://forum.pcekspert.com/*
 // @grant        none
-// @updateURL    https://raw.githubusercontent.com/precla/pceskpert-grey-theme/master/pcekspert_grey_theme.js
-// @downloadURL  https://raw.githubusercontent.com/precla/pceskpert-grey-theme/master/pcekspert_grey_theme.js
+// @updateURL    https://raw.githubusercontent.com/precla/pceskpert-grey-theme/master/pcekspert_grey_theme.user.js
+// @downloadURL  https://raw.githubusercontent.com/precla/pceskpert-grey-theme/master/pcekspert_grey_theme.user.js
 // ==/UserScript==
 
 for (let img of document.getElementsByTagName('img')) {
