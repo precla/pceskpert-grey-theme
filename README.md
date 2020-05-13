@@ -10,3 +10,5 @@ A simple grey theme for the croatian computer enthusiast forum: https://forum.pc
 
 ## Screenshot
 <img src="pce_index_page.jpeg" width=1383>
+
+<img src="pce_topic_page.jpeg" width=1142>
