@@ -1,0 +1,2 @@
+- Add settings panel
+- In settigns panel, make it possible for the user to change theme settings on the fly
