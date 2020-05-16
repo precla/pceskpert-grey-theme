@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         PCEkspert Black Theme
 // @version      0.1.1 beta
-// @namespace    https://github.com/precla/pceskpert-themes/pcekspert_dark_theme.user.js
+// @namespace    https://github.com/precla/pceskpert-themes/pcekspert_dark_theme
 // @description  very dark forum theme
 // @author       precla / pci_e3x
 // @license      GPL 3.0
