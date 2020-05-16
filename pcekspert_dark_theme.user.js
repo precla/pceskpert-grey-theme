@@ -1,6 +1,6 @@
 // ==UserScript==
-// @name         PCEkspert Black Theme
-// @version      0.1.1 beta
+// @name         PCEkspert Dark Theme
+// @version      0.1.2 beta
 // @namespace    https://github.com/precla/pceskpert-themes/pcekspert_dark_theme
 // @description  very dark forum theme
 // @author       precla / pci_e3x
@@ -38,7 +38,7 @@ addGlobalStyle("body, center, .page, html body, .alt1, .alt2, .panel, .alt1Activ
 // borders
 addGlobalStyle(".tborder { border: 1px solid #3a3a3a !important; }");
 // pce-nav-izbornik : Home, pravila i pomoc...
-addGlobalStyle(".pce-nav-izbornik tbody tr td, .thead, .vbmenu_control, .tcat, .button, .vbmenu_control > a, .tfoot, .pce-nav-izbornik-option, .pce-nav-izbornik-option { background-color: #2a2a2a !important; }");
+addGlobalStyle(".pce-nav-izbornik tbody tr td, .thead, .vbmenu_control, .tcat, .button, .vbmenu_control > a, .tfoot, .pce-nav-izbornik-option, .pce-nav-izbornik-option, .vbmenu_option, .vbmenu_option > a { background-color: #2a2a2a !important; }");
 // borders inside & outside tables
 addGlobalStyle("html body div div.page div table, html body div div.page div table ~ table, #threadslist, .tborder { background-color: #75757565 !important; }");
 // text box for reply, quick reply, new messages, quick reply panel surround:
