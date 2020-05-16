@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         PCEkspert Dark Theme
-// @version      0.1.2 beta
+// @version      0.1.3 beta
 // @namespace    https://github.com/precla/pceskpert-themes/pcekspert_dark_theme
 // @description  very dark forum theme
 // @author       precla / pci_e3x
@@ -49,3 +49,5 @@ addGlobalStyle(".pagenav .alt2 { background-color: #6a6a6a !important; text-deco
 addGlobalStyle("html body div#posts div div.page div div table tbody tr td div div div table tbody tr td.alt2 { background: #3a3a3a !important; }");
 // fonts & text
 addGlobalStyle(".pagetitle, page, td, TD, tr, h1, h2, h3, p, a, a *, a:visited, table, tbody, .alt1, .smallfont, .pce-nav-izbornik-gumboff > a, .time, label, legend, .bginput, #vB_Editor_QE_1_textarea, #vB_Editor_001_textarea { color: #c4c4c4 !important; }");
+// borders around posts
+addGlobalStyle("#posts td { border-color: #75757565 !important; }");
