@@ -1,4 +1,4 @@
-# pcekspert-theme
+# pcekspert-themes
 
 A coolection of simple themes for the croatian computer enthusiast forum: https://forum.pcekspert.com
 
@@ -6,8 +6,8 @@ A coolection of simple themes for the croatian computer enthusiast forum: https:
 - [tampermonkey](https://github.com/Tampermonkey/tampermonkey) or any similar addon for your browser
 
 ## Install
-- Dark theme: [Install](https://raw.githubusercontent.com/precla/pceskpert-theme/master/pcekspert_dark_theme.user.js)
-- Grey theme: [Install](https://raw.githubusercontent.com/precla/pceskpert-theme/master/pcekspert_grey_theme.user.js)
+- Dark theme: [Install](https://raw.githubusercontent.com/precla/pceskpert-themes/master/pcekspert_dark_theme.user.js)
+- Grey theme: [Install](https://raw.githubusercontent.com/precla/pceskpert-themes/master/pcekspert_grey_theme.user.js)
 
 ## Screenshots
 
