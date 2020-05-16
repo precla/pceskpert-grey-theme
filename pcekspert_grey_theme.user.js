@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         PCEkspert Grey Theme
-// @version      0.5.1
-// @namespace    https://github.com/precla/pceskpert-grey-theme
+// @version      0.5.2
+// @namespace    https://github.com/precla/pceskpert-themes/pcekspert_grey_theme
 // @description  slightly darker forum theme
 // @author       precla / pci_e3x
 // @license      GPL 3.0
@@ -10,8 +10,8 @@
 // @match        http://forum.pcekspert.com/*
 // @match        https://forum.pcekspert.com/*
 // @grant        none
-// @updateURL    https://raw.githubusercontent.com/precla/pceskpert-grey-theme/master/pcekspert_grey_theme.user.js
-// @downloadURL  https://raw.githubusercontent.com/precla/pceskpert-grey-theme/master/pcekspert_grey_theme.user.js
+// @updateURL    https://raw.githubusercontent.com/precla/pceskpert-themes/master/pcekspert_grey_theme.user.js
+// @downloadURL  https://raw.githubusercontent.com/precla/pceskpert-themes/master/pcekspert_grey_theme.user.js
 // ==/UserScript==
 
 for (let img of document.getElementsByTagName('img')) {
