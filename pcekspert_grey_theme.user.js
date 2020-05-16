@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         PCEkspert Grey Theme
 // @version      0.5.2
-// @namespace    https://github.com/precla/pceskpert-themes/pcekspert_grey_theme
+// @namespace    https://github.com/precla/pceskpert-themes/pcekspert_grey_theme.user.js
 // @description  slightly darker forum theme
 // @author       precla / pci_e3x
 // @license      GPL 3.0
