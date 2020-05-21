@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         PCEkspert Grey Theme
-// @version      0.6.1
+// @version      0.6.2
 // @namespace    https://github.com/precla/pceskpert-themes/pcekspert_grey_theme
 // @description  slightly darker forum theme
 // @author       precla / pci_e3x
@@ -48,3 +48,5 @@ function runStyles() {
     // qoute box
     addGlobalStyle("html body div#posts div div.page div div table tbody tr td div div div table tbody tr td.alt2 { background: #C3C3C3 !important; }");
 }
+
+runStyles();

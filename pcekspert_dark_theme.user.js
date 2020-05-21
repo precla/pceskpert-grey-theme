@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         PCEkspert Dark Theme
-// @version      0.2.2
+// @version      0.6.2
 // @namespace    https://github.com/precla/pceskpert-themes/pcekspert_dark_theme
 // @description  very dark forum theme
 // @author       precla / pci_e3x
@@ -60,3 +60,5 @@ function runStyles() {
     // borders around posts
     addGlobalStyle("#posts td { border-color: #75757565 !important; }");
 }
+
+runStyles();
