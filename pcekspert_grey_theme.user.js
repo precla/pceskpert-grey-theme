@@ -1,10 +1,11 @@
 // ==UserScript==
 // @name         PCEkspert Grey Theme
-// @version      0.5.3
+// @version      0.6.0
 // @namespace    https://github.com/precla/pceskpert-themes/pcekspert_grey_theme
 // @description  slightly darker forum theme
 // @author       precla / pci_e3x
 // @license      GPL 3.0
+// @run-at       document-start
 // @include      http://forum.pcekspert.com/
 // @include      https://forum.pcekspert.com/
 // @match        http://forum.pcekspert.com/*
@@ -14,10 +15,15 @@
 // @downloadURL  https://raw.githubusercontent.com/precla/pceskpert-themes/master/pcekspert_grey_theme.user.js
 // ==/UserScript==
 
-for (let img of document.getElementsByTagName('img')) {
-    if (img.src.includes('Forum_title.gif')) {
-        img.src = 'data:image/gif;base64,R0lGODlhaABQAMIEAHR0dKKjpLOzs9LU1v///////////////yH5BAEKAAcALAAAAABoAFAAAAP+KLrc/jDKyYClOOvNaQhDCHRkaZZgOHxn675Kqq4BbN/YN6sj7v8L2Y4FLMJ0O55x2RImicyoxpkc9KTYCLI6g2a/ny13dv1Kw+NxzcxEp2nuUKDMvoWpVR2BBqfXm3FvYQSEhHMgh3+AYoJ6hYQhhVaKJHdvQ46PmoUAa5QTd3hpaJulhXOfWpaXXUimr3t+n6usKpawuJOpArS1cCm4wVaedb21t8HJe6hsh6Jqh5HKySudskbOvjSdINPebtc/3NpznQPe6ARixEDRx9Hp8SuYRe7zahbd8fuMXjcAT7ihgbevoKE84vKc+3XO4KZtFiJmWzgHoR2ACh3CsmL+btSHfHjYnejIRZ9GTfa0qYGBcVTDk5BIqhz1oqVLjXwqzrzkr4RNNS/3DeOzk+cRVibTVXtW1KILprYCCGWENJRVLuE4hJQp1ZscqK1CqerHMs84OUFNRQX7qycoJFk5/LRFMqmmr4FK3lkk0gTVpV0efrRKVawdHKLWBV16qxq9XR7ePVJxN+8KyBnmlkwryZgIzBn+5pHUdiXo0FARXRV0egPhOwJFbxvY2rVIYn8nDr1c24YQe6dkuMUcsbjx48edHJIksxry59CjS58eF4PmMM1t9S775PeQ7SyfpeQN3kX2oUKql5/SXEfL4etNcBWhPf6/VupSwLffQcx6WTn82WATWQG+IBuABZrXSIJPscbgCUgU1teDGmCk0w7qUaiFCCFpiAIi103oISgcVpHhiA2AiMeJKMYAggV5iNjiAyrGOCNqHOl1Yw4lmrijBzX6+KME+mn22ZAQRPgMiyOyxaSHBzKDZJIxdjIlkcJxc2VmUm7pYQIAOw==';
-        break;
+document.addEventListener("DOMContentLoaded", DOM_ContentReady);
+
+function DOM_ContentReady () {
+    // megaphone image
+    for (let img of document.getElementsByTagName('img')) {
+        if (img.src.includes('Forum_title.gif')) {
+            img.src = 'data:image/gif;base64,R0lGODlhaABQAMIEAHR0dKKjpLOzs9LU1v///////////////yH5BAEKAAcALAAAAABoAFAAAAP+KLrc/jDKyYClOOvNaQhDCHRkaZZgOHxn675Kqq4BbN/YN6sj7v8L2Y4FLMJ0O55x2RImicyoxpkc9KTYCLI6g2a/ny13dv1Kw+NxzcxEp2nuUKDMvoWpVR2BBqfXm3FvYQSEhHMgh3+AYoJ6hYQhhVaKJHdvQ46PmoUAa5QTd3hpaJulhXOfWpaXXUimr3t+n6usKpawuJOpArS1cCm4wVaedb21t8HJe6hsh6Jqh5HKySudskbOvjSdINPebtc/3NpznQPe6ARixEDRx9Hp8SuYRe7zahbd8fuMXjcAT7ihgbevoKE84vKc+3XO4KZtFiJmWzgHoR2ACh3CsmL+btSHfHjYnejIRZ9GTfa0qYGBcVTDk5BIqhz1oqVLjXwqzrzkr4RNNS/3DeOzk+cRVibTVXtW1KILprYCCGWENJRVLuE4hJQp1ZscqK1CqerHMs84OUFNRQX7qycoJFk5/LRFMqmmr4FK3lkk0gTVpV0efrRKVawdHKLWBV16qxq9XR7ePVJxN+8KyBnmlkwryZgIzBn+5pHUdiXo0FARXRV0egPhOwJFbxvY2rVIYn8nDr1c24YQe6dkuMUcsbjx48edHJIksxry59CjS58eF4PmMM1t9S775PeQ7SyfpeQN3kX2oUKql5/SXEfL4etNcBWhPf6/VupSwLffQcx6WTn82WATWQG+IBuABZrXSIJPscbgCUgU1teDGmCk0w7qUaiFCCFpiAIi103oISgcVpHhiA2AiMeJKMYAggV5iNjiAyrGOCNqHOl1Yw4lmrijBzX6+KME+mn22ZAQRPgMiyOyxaSHBzKDZJIxdjIlkcJxc2VmUm7pYQIAOw==';
+            break;
+        }
     }
 }
 
