@@ -1,10 +1,11 @@
 // ==UserScript==
 // @name         PCEkspert Dark Theme
-// @version      0.1.5
+// @version      0.2.0
 // @namespace    https://github.com/precla/pceskpert-themes/pcekspert_dark_theme
 // @description  very dark forum theme
 // @author       precla / pci_e3x
 // @license      GPL 3.0
+// @run-at       document-start
 // @include      http://forum.pcekspert.com/
 // @include      https://forum.pcekspert.com/
 // @match        http://forum.pcekspert.com/*
@@ -14,10 +15,17 @@
 // @downloadURL  https://raw.githubusercontent.com/precla/pceskpert-themes/master/pcekspert_dark_theme.user.js
 // ==/UserScript==
 
-for (let img of document.getElementsByTagName('img')) {
-    if (img.src.includes('Forum_title.gif')) {
-        img.src = 'data:image/gif;base64,R0lGODlhaABQAMIEABoaGnR0dKKjpNLU1v///////////////yH5BAEKAAcALAAAAABoAFAAAAP+CLrc/jDKuUa4g+rNu5+CMIxB9p1o6g3iyApqLM8A67ohre9aeLslnnCosP1GOaKS5juSTMvoyeh8Sa8datUCxXobyNY2/C0XQ80x0IwNi9U3EVvphqPTrMCc535vfQQvLwJBezF9cG4Ei4uEIo6GKYN+Y2gDjIwjmXqRHIiJdZiiogEwnRKTlGqWo62MhKcPqaA4Ta63gZyxNXe0tYC4uFynk76fwcgWpnPFxr3I0It5bHl4iSGlmtHQ1bpYjqp/4Jfb25bDUsrhVYTZ5e8EeHJ0jrTYIvD5WlZD1TiVF/DlG2gtCZ8SP8BZqjew4Ssny3RwOYKvmMNWLy5oLFX+qkUgQhB35GFH7qIrC9kqYesYcoaySiVNYqpnrJJLhDBlYnpZc9UMnDkvCgLZc1XEFED/xNSXzVpRiF1Q7CPZ0N9TUPNUTIUoYKAgZ3fCOiXhUhVNJO/C2BM7AkwzHDSSImGJZCnGOnbCRgXRpJAMuXPFCLyr16glFXd0jD3LYlRGsU4L02AhMpy8mNWejYzTYpeEdQm7ZtKW6VycvZ7BAIZ6stcRv6kjjIU4ujDU2D1A24BsBzXuB5DvdDRNUaGN3xt8FKlrYjFdnlmRa31z9pXgo7E3at/OPWDCUpv8tOtOvrz589z/cmV8WvohwJfbu9eaEmL9uvP/qmp6A3ah/hTs+YCTQf/JwBNzA/pW4AlAhRBPCwQuiNgbz1Em4U+cJaTghRzM9g+HMaxWC4jTrbIhiXypFRqKUiFE1A/+sbiBEffBJeMHPrzI2Y04krDfiTyC8UiNTwTZoQgYFGfkjEOahd2SwCG5WoRQOkBjODFWyUCORBappSwQipjll0146M2XFehGFpoOeDgSm1Y6WQqcEKQxDp2ocAQknhX8lgAAOw==';
-        break;
+document.addEventListener("DOMContentLoaded", DOM_ContentReady);
+
+function DOM_ContentReady () {
+    // header + footer
+    addGlobalStyle(".header, .pce-footer { background-image: linear-gradient(to bottom, #3a3a3a 0%, #1a1a1a 100%); }");
+    // megaphone image
+    for (let img of document.getElementsByTagName('img')) {
+        if (img.src.includes('Forum_title.gif')) {
+            img.src = 'data:image/gif;base64,R0lGODlhaABQAMIEABoaGnR0dKKjpNLU1v///////////////yH5BAEKAAcALAAAAABoAFAAAAP+CLrc/jDKuUa4g+rNu5+CMIxB9p1o6g3iyApqLM8A67ohre9aeLslnnCosP1GOaKS5juSTMvoyeh8Sa8datUCxXobyNY2/C0XQ80x0IwNi9U3EVvphqPTrMCc535vfQQvLwJBezF9cG4Ei4uEIo6GKYN+Y2gDjIwjmXqRHIiJdZiiogEwnRKTlGqWo62MhKcPqaA4Ta63gZyxNXe0tYC4uFynk76fwcgWpnPFxr3I0It5bHl4iSGlmtHQ1bpYjqp/4Jfb25bDUsrhVYTZ5e8EeHJ0jrTYIvD5WlZD1TiVF/DlG2gtCZ8SP8BZqjew4Ssny3RwOYKvmMNWLy5oLFX+qkUgQhB35GFH7qIrC9kqYesYcoaySiVNYqpnrJJLhDBlYnpZc9UMnDkvCgLZc1XEFED/xNSXzVpRiF1Q7CPZ0N9TUPNUTIUoYKAgZ3fCOiXhUhVNJO/C2BM7AkwzHDSSImGJZCnGOnbCRgXRpJAMuXPFCLyr16glFXd0jD3LYlRGsU4L02AhMpy8mNWejYzTYpeEdQm7ZtKW6VycvZ7BAIZ6stcRv6kjjIU4ujDU2D1A24BsBzXuB5DvdDRNUaGN3xt8FKlrYjFdnlmRa31z9pXgo7E3at/OPWDCUpv8tOtOvrz589z/cmV8WvohwJfbu9eaEmL9uvP/qmp6A3ah/hTs+YCTQf/JwBNzA/pW4AlAhRBPCwQuiNgbz1Em4U+cJaTghRzM9g+HMaxWC4jTrbIhiXypFRqKUiFE1A/+sbiBEffBJeMHPrzI2Y04krDfiTyC8UiNTwTZoQgYFGfkjEOahd2SwCG5WoRQOkBjODFWyUCORBappSwQipjll0146M2XFehGFpoOeDgSm1Y6WQqcEKQxDp2ocAQknhX8lgAAOw==';
+            break;
+        }
     }
 }
 
@@ -31,8 +39,6 @@ function addGlobalStyle(css) {
     head.appendChild(style);
 }
 
-// header + footer
-addGlobalStyle(".header, .pce-footer { background-image: linear-gradient(to bottom, #3a3a3a 0%, #1a1a1a 100%); }");
 // page background
 addGlobalStyle("body, center, .page, html body, .alt1, .alt2, .panel, .alt1Active, .vBulletin_editor, html body div div.page div table tbody, .imagebutton, .pce-nav-izbornik-thead, .pce-nav-izbornik-thead a { background: #1a1a1a !important; }");
 // borders
