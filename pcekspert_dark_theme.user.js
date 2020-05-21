@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         PCEkspert Dark Theme
-// @version      0.2.1
+// @version      0.2.2
 // @namespace    https://github.com/precla/pceskpert-themes/pcekspert_dark_theme
 // @description  very dark forum theme
 // @author       precla / pci_e3x
@@ -27,6 +27,7 @@ function DOM_ContentReady () {
             break;
         }
     }
+    runStyles();
 }
 
 function addGlobalStyle(css) {
@@ -39,21 +40,23 @@ function addGlobalStyle(css) {
     head.appendChild(style);
 }
 
-// page background
-addGlobalStyle("body, center, .page, html body, .alt1, .alt2, .panel, .alt1Active, .vBulletin_editor, html body div div.page div table tbody, .imagebutton, .pce-nav-izbornik-thead, .pce-nav-izbornik-thead a { background: #1a1a1a !important; }");
-// borders
-addGlobalStyle(".tborder { border: 1px solid #3a3a3a !important; }");
-// pce-nav-izbornik : Home, pravila i pomoc...
-addGlobalStyle(".pce-nav-izbornik tbody tr td, .thead, .vbmenu_control, .tcat, .button, .vbmenu_control > a, .tfoot, .pce-nav-izbornik-option, .pce-nav-izbornik-option, .vbmenu_option, .vbmenu_option > a { background-color: #2a2a2a !important; }");
-// borders inside & outside tables
-addGlobalStyle("html body div div.page div table, html body div div.page div table ~ table, #threadslist, .tborder { background-color: #75757565 !important; }");
-// text box for reply, quick reply, new messages, quick reply panel surround:
-addGlobalStyle("textarea, .panelsurround, .bginput { background: #3a3a3a !important; }");
-// highlight the current page in the open topic:
-addGlobalStyle(".pagenav .alt2 { background-color: #6a6a6a !important; text-decoration: underline }");
-// qoute box
-addGlobalStyle("html body div#posts div div.page div div table tbody tr td div div div table tbody tr td.alt2, #__xclaimwords_wrapper > div > pre { background: #3a3a3a !important; }");
-// fonts & text
-addGlobalStyle(".pagetitle, page, td, TD, tr, h1, h2, h3, p, a, a *, a:visited, table, tbody, .alt1, .smallfont, .pce-nav-izbornik-gumboff > a, .time, label, legend, .bginput, #vBulletin_editor, #__xclaimwords_wrapper > div > pre, #vB_Editor_QR, textarea, #vB_Editor_001_textarea { color: #c4c4c4 !important; }");
-// borders around posts
-addGlobalStyle("#posts td { border-color: #75757565 !important; }");
+function runStyles() {
+    // page background
+    addGlobalStyle("body, center, .page, html body, .alt1, .alt2, .panel, .alt1Active, .vBulletin_editor, html body div div.page div table tbody, .imagebutton, .pce-nav-izbornik-thead, .pce-nav-izbornik-thead a { background: #1a1a1a !important; }");
+    // borders
+    addGlobalStyle(".tborder { border: 1px solid #3a3a3a !important; }");
+    // pce-nav-izbornik : Home, pravila i pomoc...
+    addGlobalStyle(".pce-nav-izbornik tbody tr td, .thead, .vbmenu_control, .tcat, .button, .vbmenu_control > a, .tfoot, .pce-nav-izbornik-option, .pce-nav-izbornik-option, .vbmenu_option, .vbmenu_option > a { background-color: #2a2a2a !important; }");
+    // borders inside & outside tables
+    addGlobalStyle("html body div div.page div table, html body div div.page div table ~ table, #threadslist, .tborder { background-color: #75757565 !important; }");
+    // text box for reply, quick reply, new messages, quick reply panel surround:
+    addGlobalStyle("textarea, .panelsurround, .bginput { background: #3a3a3a !important; }");
+    // highlight the current page in the open topic:
+    addGlobalStyle(".pagenav .alt2 { background-color: #6a6a6a !important; text-decoration: underline }");
+    // qoute box
+    addGlobalStyle("html body div#posts div div.page div div table tbody tr td div div div table tbody tr td.alt2, #__xclaimwords_wrapper > div > pre { background: #3a3a3a !important; }");
+    // fonts & text
+    addGlobalStyle(".pagetitle, page, td, TD, tr, h1, h2, h3, p, a, a *, a:visited, table, tbody, .alt1, .smallfont, .pce-nav-izbornik-gumboff > a, .time, label, legend, .bginput, #vBulletin_editor, #__xclaimwords_wrapper > div > pre, #vB_Editor_QR, textarea, #vB_Editor_001_textarea { color: #c4c4c4 !important; }");
+    // borders around posts
+    addGlobalStyle("#posts td { border-color: #75757565 !important; }");
+}
