@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         PCEkspert Dark Theme
-// @version      0.6.9
+// @version      0.7.0
 // @namespace    https://github.com/precla/pceskpert-themes/pcekspert_dark_theme
 // @description  very dark forum theme
 // @author       precla / pci_e3x
