@@ -42,7 +42,7 @@ function addGlobalStyle(css) {
 
 function runStyles() {
     // max width
-    // addGlobalStyle("body { max-width: 1440px !important; margin: auto !important; }");
+    addGlobalStyle("body { max-width: 1440px !important; margin: 0 auto !important; }");
     // page background
     addGlobalStyle("body, center, .page, html body, .alt1, .alt2, .panel, .alt1Active, .vBulletin_editor, html body div div.page div table tbody, .imagebutton, .pce-nav-izbornik-thead, .pce-nav-izbornik-thead a { background: #1a1a1a !important; }");
     // borders
