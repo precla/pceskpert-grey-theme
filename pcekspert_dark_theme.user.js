@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         PCEkspert Dark Theme
-// @version      0.6.8
+// @version      0.6.9
 // @namespace    https://github.com/precla/pceskpert-themes/pcekspert_dark_theme
 // @description  very dark forum theme
 // @author       precla / pci_e3x
@@ -53,8 +53,8 @@ function runStyles() {
     addGlobalStyle("html body div div.page div table, html body div div.page div table ~ table, #threadslist, .tborder { background-color: #75757565 !important; }");
     // text box for reply, quick reply, new messages, quick reply panel surround:
     addGlobalStyle("textarea, .panelsurround, .bginput { background: #3a3a3a !important; }");
-    // highlight the current page in the open topic:
-    addGlobalStyle(".pagenav .alt2 { background-color: #6a6a6a !important; text-decoration: underline }");
+    // highlight the current page in the open topic + color on hover items in quick menu:
+    addGlobalStyle(".pagenav .alt2, .pce-nav-izbornik-option a:hover { background-color: #6a6a6a !important; text-decoration: underline }");
     // qoute box
     addGlobalStyle("html body div#posts div div.page div div table tbody tr td div div div table tbody tr td.alt2, #__xclaimwords_wrapper > div > pre { background: #3a3a3a !important; }");
     // fonts & text
