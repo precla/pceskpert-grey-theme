@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         PCEkspert Dark Theme
-// @version      0.7.0
+// @version      0.7.1
 // @namespace    https://github.com/precla/pceskpert-themes/pcekspert_dark_theme
 // @description  very dark forum theme
 // @author       precla / pci_e3x
@@ -42,7 +42,7 @@ function addGlobalStyle(css) {
 
 function runStyles() {
     // max width
-    addGlobalStyle("html { max-width: 1440px !important; margin: 0 auto !important; } img { max-width: 100% !important } ");
+    addGlobalStyle("html { max-width: 1440px !important; margin: 0 auto !important; } #posts img { max-width: 100% !important } ");
     // page background
     addGlobalStyle("body, center, .page, html body, .alt1, .alt2, .panel, .alt1Active, .vBulletin_editor, html body div div.page div table tbody, .imagebutton, .pce-nav-izbornik-thead, .pce-nav-izbornik-thead a { background: #1a1a1a !important; }");
     // borders
