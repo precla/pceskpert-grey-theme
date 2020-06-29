@@ -58,7 +58,7 @@ function runStyles() {
     // qoute box
     addGlobalStyle("html body div#posts div div.page div div table tbody tr td div div div table tbody tr td.alt2, #__xclaimwords_wrapper > div > pre { background: #3a3a3a !important; }");
     // fonts & text
-    addGlobalStyle(".pagetitle, page, td, TD, tr, h1, h2, h3, p, a, a *, a:visited, table, tbody, .alt1, .smallfont, .time, label, legend, .bginput, #vBulletin_editor, pre, #vB_Editor_QR, textarea, #vB_Editor_001_textarea, font, .alt2, #collapseobj_newpost_options * { color: #c4c4c4 !important; }");
+    addGlobalStyle(".pagetitle, page, td, TD, tr, h1, h2, h3, p, a, a *, a:visited, table, tbody, .alt1, .smallfont, .time, label, legend, .bginput, #vBulletin_editor, pre, #vB_Editor_QR, textarea, #vB_Editor_001_textarea, font, .alt2, #collapseobj_newpost_options tr td.panelsurround div.panel div fieldset.fieldset div div, .panelsurround div.panel div div { color: #c4c4c4 !important; }");
     // borders around posts
     addGlobalStyle("#posts td { border-color: #75757565 !important; }");
 }
