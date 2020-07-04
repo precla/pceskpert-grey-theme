@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         PCEkspert Dark Theme
-// @version      0.7.2
+// @version      0.7.3
 // @namespace    https://github.com/precla/pceskpert-themes/pcekspert_dark_theme
 // @description  very dark forum theme
 // @author       precla / pci_e3x
@@ -61,6 +61,8 @@ function runStyles() {
     addGlobalStyle(".pagetitle, page, td, TD, tr, h1, h2, h3, p, a, a *, a:visited, table, tbody, .alt1, .smallfont, .time, label, legend, .bginput, #vBulletin_editor, pre, #vB_Editor_QR, textarea, #vB_Editor_001_textarea, font, .alt2, #collapseobj_newpost_options tr td.panelsurround div.panel div fieldset.fieldset div div, .panelsurround div.panel div div { color: #c4c4c4 !important; }");
     // borders around posts
     addGlobalStyle("#posts td { border-color: #75757565 !important; }");
+    // amout of unread pm in red color
+    addGlobalStyle("blink strong { color: #ff0000 !important; }");
 }
 
 runStyles();
