@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         PCEkspert Dark Theme
-// @version      0.7.4
+// @version      0.7.5
 // @namespace    https://github.com/precla/pceskpert-themes/pcekspert_dark_theme
 // @description  very dark forum theme
 // @author       precla / pci_e3x
@@ -63,6 +63,8 @@ function runStyles() {
     addGlobalStyle("#posts td { border-color: #75757565 !important; }");
     // amout of unread pm in red color
     addGlobalStyle("blink strong { color: #ff0000 !important; }");
+    // admin and mods with different color
+    addGlobalStyle("a.bigusername span { color: #336699 !important; }");
 }
 
 runStyles();
